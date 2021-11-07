@@ -11,18 +11,33 @@
         <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarrotMarket_clonecoding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeVC" customModule="CarrotMarket_clonecoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vw2-G8-69t">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vw2-G8-69t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EdE-BS-cpe"/>
+                            <constraint firstItem="Vw2-G8-69t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Epy-Wu-xzm"/>
+                            <constraint firstItem="Vw2-G8-69t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ic0-Ja-KUk"/>
+                            <constraint firstItem="Vw2-G8-69t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zhS-Ib-7hg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="homeIcon" selectedImage="homeIconFill" id="2Jx-zZ-aOQ"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="Vw2-G8-69t" id="2z2-uh-KX3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="-177"/>
+            <point key="canvasLocation" x="957.60000000000002" y="-177.33990147783251"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lf2-N4-VzG">
@@ -30,6 +45,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="09N-Sd-C8F" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y6v-GZ-U0M">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
