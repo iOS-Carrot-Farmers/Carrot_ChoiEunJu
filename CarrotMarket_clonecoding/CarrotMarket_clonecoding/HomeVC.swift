@@ -10,7 +10,6 @@ import JJFloatingActionButton
 
 class HomeVC: UIViewController {
     
-    
     // MARK: - Vars & Lets Part
     
     var homeContentList: [HomeContentData] = []
@@ -19,6 +18,7 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var homeTableView: UITableView!
     
+    // MARK: - Life Cycle Part
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,8 @@ class HomeVC: UIViewController {
         setTableView()
         setFloatingButton()
     }
+    
+    // MARK: - Custom Method Part
     
     func setFloatingButton() {
         let actionButton = JJFloatingActionButton()
@@ -54,8 +56,9 @@ class HomeVC: UIViewController {
             HomeContentData(postTitle: "애플워치 SE 저번주에 샀습니다", postSubTitle: "군자동 ∙ 끌올 3일 전", priceInfo: "359,000원", heartInfo: "23", postImageName: "appleWatch")
         ])
     }
-
 }
+
+// MARK: - Extension Part
 
 extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
