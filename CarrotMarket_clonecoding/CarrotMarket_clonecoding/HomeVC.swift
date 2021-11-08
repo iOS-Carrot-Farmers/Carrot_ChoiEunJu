@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import JJFloatingActionButton
 
 class HomeVC: UIViewController {
+    
     
     // MARK: - Vars & Lets Part
     
@@ -22,6 +24,17 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         initDataList()
         setTableView()
+        setFloatingButton()
+    }
+    
+    func setFloatingButton() {
+        let actionButton = JJFloatingActionButton()
+        actionButton.buttonColor = UIColor(red: 238/255, green: 133/255, blue: 72/255, alpha: 1)
+        
+        homeTableView.addSubview(actionButton)
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+        actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
+        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
     }
     
     func setTableView() {

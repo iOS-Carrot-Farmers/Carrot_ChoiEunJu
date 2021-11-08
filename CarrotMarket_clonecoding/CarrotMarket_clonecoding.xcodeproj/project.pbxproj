@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73BEED91090C4A52DD24EC06 /* Pods_CarrotMarket_clonecoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C09380E9997BA193C8759A /* Pods_CarrotMarket_clonecoding.framework */; };
 		772C13F727359C4300BB0127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772C13F627359C4300BB0127 /* AppDelegate.swift */; };
 		772C13F927359C4300BB0127 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772C13F827359C4300BB0127 /* SceneDelegate.swift */; };
 		772C13FE27359C4300BB0127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772C13FC27359C4300BB0127 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C55395DCDF9E9BB84D019BD /* Pods-CarrotMarket_clonecoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrotMarket_clonecoding.debug.xcconfig"; path = "Target Support Files/Pods-CarrotMarket_clonecoding/Pods-CarrotMarket_clonecoding.debug.xcconfig"; sourceTree = "<group>"; };
+		3D7518DF887ADD3F731EBDEF /* Pods-CarrotMarket_clonecoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrotMarket_clonecoding.release.xcconfig"; path = "Target Support Files/Pods-CarrotMarket_clonecoding/Pods-CarrotMarket_clonecoding.release.xcconfig"; sourceTree = "<group>"; };
 		772C13F327359C4300BB0127 /* CarrotMarket_clonecoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotMarket_clonecoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772C13F627359C4300BB0127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		772C13F827359C4300BB0127 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		772C1410273834BE00BB0127 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../../../Library/Fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		772C1412273834CC00BB0127 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "../../../../../../../../../Library/Fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		772C14162738478C00BB0127 /* AppContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentDataModel.swift; sourceTree = "<group>"; };
+		84C09380E9997BA193C8759A /* Pods_CarrotMarket_clonecoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarrotMarket_clonecoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BEED91090C4A52DD24EC06 /* Pods_CarrotMarket_clonecoding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		362BA5361F8CBDD2DC114ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84C09380E9997BA193C8759A /* Pods_CarrotMarket_clonecoding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		772C13EA27359C4300BB0127 = {
 			isa = PBXGroup;
 			children = (
 				772C13F527359C4300BB0127 /* CarrotMarket_clonecoding */,
 				772C13F427359C4300BB0127 /* Products */,
+				8128B124DC9E2FF44C439342 /* Pods */,
+				362BA5361F8CBDD2DC114ED9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +97,16 @@
 			path = CarrotMarket_clonecoding;
 			sourceTree = "<group>";
 		};
+		8128B124DC9E2FF44C439342 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C55395DCDF9E9BB84D019BD /* Pods-CarrotMarket_clonecoding.debug.xcconfig */,
+				3D7518DF887ADD3F731EBDEF /* Pods-CarrotMarket_clonecoding.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772C140727359C4600BB0127 /* Build configuration list for PBXNativeTarget "CarrotMarket_clonecoding" */;
 			buildPhases = (
+				C327495B1277494A4E5D4B0C /* [CP] Check Pods Manifest.lock */,
 				772C13EF27359C4300BB0127 /* Sources */,
 				772C13F027359C4300BB0127 /* Frameworks */,
 				772C13F127359C4300BB0127 /* Resources */,
+				024F5FEC763F7E7D84B85731 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +177,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		024F5FEC763F7E7D84B85731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarrotMarket_clonecoding/Pods-CarrotMarket_clonecoding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarrotMarket_clonecoding/Pods-CarrotMarket_clonecoding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarrotMarket_clonecoding/Pods-CarrotMarket_clonecoding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C327495B1277494A4E5D4B0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarrotMarket_clonecoding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		772C13EF27359C4300BB0127 /* Sources */ = {
@@ -304,6 +373,7 @@
 		};
 		772C140827359C4600BB0127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C55395DCDF9E9BB84D019BD /* Pods-CarrotMarket_clonecoding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,6 +402,7 @@
 		};
 		772C140927359C4600BB0127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7518DF887ADD3F731EBDEF /* Pods-CarrotMarket_clonecoding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
