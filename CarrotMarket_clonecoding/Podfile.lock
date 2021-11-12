@@ -1,0 +1,16 @@
+PODS:
+  - JJFloatingActionButton (2.5.0)
+
+DEPENDENCIES:
+  - JJFloatingActionButton
+
+SPEC REPOS:
+  trunk:
+    - JJFloatingActionButton
+
+SPEC CHECKSUMS:
+  JJFloatingActionButton: fdc3aefb0f28f04d0f988fa25d5fac97028a9ea7
+
+PODFILE CHECKSUM: d2969e78bc9254a281a36133bb9e401a4d5c7d8a
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,6 @@
+framework module Pods_CarrotMarket_clonecoding {
+  umbrella header "Pods-CarrotMarket_clonecoding-umbrella.h"
+
+  export *
+  module * { export * }
+}
